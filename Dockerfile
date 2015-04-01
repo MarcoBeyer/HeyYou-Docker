@@ -2,12 +2,12 @@ FROM debian:7
 MAINTAINER Rafael Römhild <rafael@roemhild.de>
 
 ENV EJABBERD_VERSION 15.03
-ENV EJABBERD_USER ejabberd
+ENV EJABBERD_USER heyyou
 ENV EJABBERD_ROOT /opt/ejabberd
 ENV HOME $EJABBERD_ROOT
 ENV PATH $EJABBERD_ROOT/bin:/usr/sbin:/usr/bin:/sbin:/bin
 ENV DEBIAN_FRONTEND noninteractive
-ENV XMPP_DOMAIN localhost
+ENV XMPP_DOMAIN xmpp.heyyouapp.net
 
 # Add ejabberd user and group
 RUN groupadd -r $EJABBERD_USER \
